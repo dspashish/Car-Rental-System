@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="381.0" prefWidth="634.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="abc_car_rental.FXMLDocumentController">
+   <children>
+      <Label layoutX="303.0" layoutY="14.0" text="Label" />
+      <Label layoutX="14.0" layoutY="55.0" text="NAME" />
+      <Label layoutX="14.0" layoutY="89.0" text="PHONE NUMBER" />
+      <Label layoutX="13.0" layoutY="200.0" text="CAR REQUIRED FOR NO. OF DAYS" />
+      <TextField fx:id="name" layoutX="243.0" layoutY="51.0" />
+      <TextField fx:id="phone" layoutX="243.0" layoutY="85.0" />
+      <TextField fx:id="requireddays" layoutX="243.0" layoutY="196.0" />
+      <RadioButton fx:id="dcar" layoutX="105.0" layoutY="122.0" mnemonicParsing="false" onAction="#radiobuttons" text="Deluxe Car" />
+      <RadioButton fx:id="sdcar" layoutX="105.0" layoutY="146.0" mnemonicParsing="false" onAction="#radiobuttons" text="Semi Deluke Car" />
+      <RadioButton fx:id="ocar" layoutX="105.0" layoutY="174.0" mnemonicParsing="false" onAction="#radiobuttons" text="Ordinary Car" />
+      <CheckBox fx:id="guide" layoutX="497.0" layoutY="146.0" mnemonicParsing="false" text="Guid Required" />
+      <Button layoutX="78.0" layoutY="235.0" mnemonicParsing="false" onAction="#calculate" text="CALCULATE" />
+      <Button layoutX="278.0" layoutY="235.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="79.0" text="CLEAR" />
+      <Button layoutX="520.0" layoutY="235.0" mnemonicParsing="false" onAction="#close" text="CLOSE" />
+      <Label layoutX="143.0" layoutY="273.0" text="Amont" />
+      <Label layoutX="143.0" layoutY="300.0" text="Guide Charges" />
+      <Label layoutX="145.0" layoutY="333.0" text="Total Amount" />
+      <Label fx:id="amount" layoutX="296.0" layoutY="273.0" prefHeight="17.0" prefWidth="170.0" />
+      <Label fx:id="gcharge" layoutX="296.0" layoutY="300.0" prefHeight="17.0" prefWidth="170.0" />
+      <Label fx:id="totalamount" layoutX="296.0" layoutY="333.0" prefHeight="17.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>
